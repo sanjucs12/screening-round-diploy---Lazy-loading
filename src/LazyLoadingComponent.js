@@ -8,7 +8,7 @@ const LazyLoadingComponent = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   const fetchData = async () => {
     setLoading(true);
@@ -41,7 +41,7 @@ const LazyLoadingComponent = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  });
 
   return (
     <div>
